@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry location="lib/hsqldb-1.8.0.10.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="org.hsqldb.jdbcDriver" connectionURL="jdbc:hsqldb:mem:testdb" userId="sa" password="" />
+    <javaModelGenerator targetPackage="com.kai.mavenspring" targetProject="MavenSpring" />
+    <sqlMapGenerator targetPackage="com.kai.mavenspring" targetProject="MavenSpring" />
+    <javaClientGenerator targetPackage="com.kai.mavenspring" targetProject="MavenSpring" type="XMLMAPPER" />
+    <table schema="testdb" tableName="favorate" >
+      <!-- <columnOverride column="name" property="???" /> -->
+    </table>
+  </context>
+</generatorConfiguration>
